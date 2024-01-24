@@ -1,0 +1,66 @@
+2024-01-23T18:37:35.519178+0300 SUCCESS <Response status_code=200, "text/html; charset=utf-8">
+2024-01-23T18:40:44.670223+0300 SUCCESS <Response status_code=200, "text/html; charset=utf-8">
+2024-01-23T18:44:47.316710+0300 ERROR <Response status_code=404, "text/html; charset=utf-8">
+2024-01-23T19:34:57.562557+0300 SUCCESS {'status': 200}
+2024-01-23T19:34:57.770643+0300 SUCCESS {'status': 200}
+2024-01-23T19:35:15.133717+0300 SUCCESS {'status': 200}
+2024-01-23T19:35:15.198200+0300 SUCCESS {'status': 200}
+2024-01-23T19:37:59.415346+0300 SUCCESS {'status': 200}
+2024-01-23T19:37:59.504948+0300 SUCCESS {'status': 200}
+2024-01-23T19:39:21.988820+0300 SUCCESS {'status': 200}
+2024-01-23T19:39:21.989367+0300 SUCCESS {'status': 200}
+2024-01-23T19:39:22.058856+0300 SUCCESS {'status': 200}
+2024-01-23T19:39:22.061861+0300 SUCCESS {'status': 200}
+2024-01-23T19:39:36.366469+0300 SUCCESS {'status': 200}
+2024-01-23T19:39:36.432690+0300 SUCCESS {'status': 200}
+2024-01-24T05:55:45.244481+0300 SUCCESS {'status': 200}
+2024-01-24T05:55:45.446707+0300 SUCCESS {'status': 200}
+2024-01-24T05:55:51.549962+0300 SUCCESS {'status': 200}
+2024-01-24T05:55:51.681914+0300 SUCCESS {'status': 200}
+2024-01-24T05:56:09.513003+0300 SUCCESS {'status': 200}
+2024-01-24T05:56:09.792984+0300 SUCCESS {'status': 200}
+2024-01-24T06:01:25.143536+0300 SUCCESS {'status': 200}
+2024-01-24T06:01:25.153488+0300 SUCCESS {'status': 200}
+2024-01-24T06:01:25.206594+0300 SUCCESS {'status': 200}
+2024-01-24T06:01:25.211895+0300 SUCCESS {'status': 200}
+2024-01-24T06:03:46.519390+0300 ERROR {'status': 401}
+2024-01-24T06:03:46.582936+0300 SUCCESS {'status': 200}
+2024-01-24T06:03:46.645288+0300 SUCCESS {'status': 200}
+2024-01-24T06:06:07.744582+0300 ERROR {'status': 401, 'body': {'detail': ErrorDetail(string='Данный токен недействителен для любого типа токена', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Токен недействителен или просрочен', code='token_not_valid')}]}}
+2024-01-24T06:06:07.744975+0300 ERROR {'status': 401, 'body': {'detail': ErrorDetail(string='Данный токен недействителен для любого типа токена', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Токен недействителен или просрочен', code='token_not_valid')}]}}
+2024-01-24T06:06:07.755635+0300 SUCCESS {'status': 200}
+2024-01-24T06:06:07.755974+0300 SUCCESS {'status': 200}
+2024-01-24T06:06:07.824938+0300 SUCCESS {'status': 200}
+2024-01-24T06:06:07.836576+0300 SUCCESS {'status': 200}
+2024-01-24T06:14:00.623174+0300 ERROR {'status': 401, 'body': {'detail': ErrorDetail(string='Учетные данные не были предоставлены.', code='not_authenticated')}}
+2024-01-24T06:14:00.695748+0300 SUCCESS {'status': 200}
+2024-01-24T06:14:00.718747+0300 SUCCESS {'status': 200}
+2024-01-24T06:32:43.871370+0300 ERROR {'status': 401, 'body': {'detail': ErrorDetail(string='Данный токен недействителен для любого типа токена', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Токен недействителен или просрочен', code='token_not_valid')}]}}
+2024-01-24T06:32:43.880640+0300 SUCCESS {'status': 200}
+2024-01-24T06:32:43.946153+0300 SUCCESS {'status': 200}
+2024-01-24T06:32:45.180222+0300 SUCCESS {'status': 200}
+2024-01-24T06:32:45.190331+0300 SUCCESS {'status': 200}
+2024-01-24T06:35:46.570053+0300 SUCCESS {'status': 200}
+2024-01-24T06:35:46.758113+0300 SUCCESS {'status': 200}
+2024-01-24T06:37:55.155198+0300 ERROR {'status': 401, 'body': {'detail': ErrorDetail(string='Учетные данные не были предоставлены.', code='not_authenticated')}}
+2024-01-24T06:37:55.175207+0300 SUCCESS {'status': 200}
+2024-01-24T06:37:55.237105+0300 SUCCESS {'status': 200}
+2024-01-24T06:37:59.419948+0300 SUCCESS {'status': 200}
+2024-01-24T06:37:59.427724+0300 SUCCESS {'status': 200}
+2024-01-24T06:38:57.954353+0300 ERROR {'status': 401, 'body': {'detail': ErrorDetail(string='Данный токен недействителен для любого типа токена', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Токен недействителен или просрочен', code='token_not_valid')}]}}
+2024-01-24T06:38:58.005431+0300 SUCCESS {'status': 200}
+2024-01-24T06:38:58.069429+0300 SUCCESS {'status': 200}
+2024-01-24T06:39:00.209943+0300 SUCCESS {'status': 200}
+2024-01-24T06:39:30.390632+0300 SUCCESS {'status': 200}
+2024-01-24T06:57:06.251284+0300 ERROR {'status': 401, 'body': {'detail': ErrorDetail(string='Данный токен недействителен для любого типа токена', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Токен недействителен или просрочен', code='token_not_valid')}]}}
+2024-01-24T06:57:06.264906+0300 SUCCESS {'status': 200}
+2024-01-24T06:57:06.326213+0300 SUCCESS {'status': 200}
+2024-01-24T07:03:41.263496+0300 ERROR {'status': 401, 'body': {'detail': ErrorDetail(string='Данный токен недействителен для любого типа токена', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Токен недействителен или просрочен', code='token_not_valid')}]}}
+2024-01-24T07:03:41.264181+0300 ERROR {'status': 401, 'body': {'detail': ErrorDetail(string='Данный токен недействителен для любого типа токена', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Токен недействителен или просрочен', code='token_not_valid')}]}}
+2024-01-24T07:03:41.276264+0300 SUCCESS {'status': 200}
+2024-01-24T07:03:41.279633+0300 SUCCESS {'status': 200}
+2024-01-24T07:03:41.346722+0300 SUCCESS {'status': 200}
+2024-01-24T07:03:41.350321+0300 SUCCESS {'status': 200}
+2024-01-24T07:09:25.626374+0300 ERROR {'status': 401, 'body': {'detail': ErrorDetail(string='Данный токен недействителен для любого типа токена', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Токен недействителен или просрочен', code='token_not_valid')}]}}
+2024-01-24T07:09:25.634591+0300 SUCCESS {'status': 200}
+2024-01-24T07:09:25.697334+0300 SUCCESS {'status': 200}
