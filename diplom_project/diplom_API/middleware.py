@@ -9,6 +9,7 @@ class LoggingMiddleware:
         response = self.get_response(request);
         status = response.status_code
         request_path = request.META.get('PATH_INFO')
+        request_data = response.data if response.data is not None else None 
         if 200 >= status < 300:
             logger.success({
                 'status': status,
@@ -18,18 +19,18 @@ class LoggingMiddleware:
             logger.info({
                 'status': status,
                 'request_path': request_path,
-                'body': response.data
+                'body': request_data
             })
         elif status >= 400 and status < 500:
             logger.error({
                 'status': status,
                 'request_path': request_path,
-                'body': response.data
+                'body': request_data
             })
         elif status >= 500:
             logger.critical({
                 'status': status,
-                'request_path': request_path,
+                'request_path': request_data,
                 'body': response.data
             })
         return response
