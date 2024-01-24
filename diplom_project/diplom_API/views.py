@@ -36,7 +36,7 @@ class CheckUser(APIView):
 
 class GetFilesAllUsers(APIView):
 
-    permission_classes = [IsAdminUser, ]
+    permission_classes = [IsAdminUser, IsAuthenticated]
 
     def get(self, request):
         queryset = FileData.objects.all()
@@ -46,7 +46,7 @@ class GetFilesAllUsers(APIView):
 
 class GetFilesUser(APIView):
 
-    permission_classes = [IsAdminUser, IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
     def get(self, request, id):
         queryset = FileData.objects.filter(user=id)
@@ -87,7 +87,7 @@ class FileDataView(mixins.ListModelMixin,
 
     queryset = FileData.objects.all()
     serializer_class = FileDataSerializers
-    permission_classes = [IsAuthenticated, IsAdminUser]
+    permission_classes = [IsAuthenticated, ]
     parser_classes = [parsers.MultiPartParser ]
 
     def create(self, request, *args, **kwargs):
@@ -155,7 +155,7 @@ class DownloadFileView(mixins.RetrieveModelMixin,
     
     queryset = FileData.objects.all()
     serializer_class = FileDataSerializers
-    permission_classes = [IsAuthenticated, IsAdminUser]
+    permission_classes = [IsAuthenticated, ]
 
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
@@ -173,7 +173,7 @@ class GenerateExternalDownloadLinkView(mixins.RetrieveModelMixin,
     
     queryset = FileData.objects.all()
     serializer_class = FileDataSerializers
-    permission_classes = [IsAuthenticated, IsAdminUser]
+    permission_classes = [IsAuthenticated ]
 
     def retrieve(self, request, *args, **kwargs):
         instance = self.get_object()
