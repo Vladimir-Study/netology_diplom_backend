@@ -17,14 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from diplom_API.views import UsersView, FileDataView, UsersDestroyView, UsersCreateView, UpdateDataView, DownloadFileView, GenerateExternalDownloadLinkView, ExternalDownloadLinkView, CheckUser, GetFilesAllUsers, GetFilesUser
+from diplom_API.views import UsersView, FileDataView, UsersCreateView, UpdateDataView, DownloadFileView, GenerateExternalDownloadLinkView, ExternalDownloadLinkView, CheckUser, GetFilesAllUsers, GetFilesUser
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework import routers
 from diplom_API.yasg import urlpatterns as docs_urls
 
 router = routers.SimpleRouter()
 router.register(r'users', UsersView)
-router.register(r'user', UsersDestroyView)
+# router.register(r'user', UsersDestroyView)
 router.register(r'user', UsersCreateView)
 router.register(r'files', FileDataView)
 router.register(r'file', UpdateDataView)

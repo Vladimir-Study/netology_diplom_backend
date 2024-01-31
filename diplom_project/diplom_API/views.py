@@ -63,19 +63,27 @@ class UsersCreateView(mixins.CreateModelMixin,
 class UsersView(mixins.ListModelMixin,
                 mixins.RetrieveModelMixin, 
                 mixins.UpdateModelMixin, 
+                mixins.DestroyModelMixin,
                 GenericViewSet):
 
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = [IsAuthenticated, IsAdminUser]
+    # permission_classes = [IsAdminUser]
+
+    def perform_update(self, serializer):
+        serializer.save()
+
+    def partial_update(self, request, *args, **kwargs):
+        kwargs['partial'] = True
+        return self.update(request, *args, **kwargs)
 
 
-class UsersDestroyView(mixins.DestroyModelMixin, 
-                        GenericViewSet):
+# class UsersDestroyView(, 
+#                         GenericViewSet):
 
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-    permission_classes = [IsAuthenticated, IsAdminUser]
+#     queryset = User.objects.all()
+#     serializer_class = UserSerializer
+#     permission_classes = [IsAuthenticated, IsAdminUser]
 
 
 class FileDataView(mixins.ListModelMixin,
