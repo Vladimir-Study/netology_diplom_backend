@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*', ]
 #   'http://localhost:5173'
 
 BASE_MEDIA_DIR = os.environ.get('BASE_MEDIA_DIR')
@@ -138,6 +138,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -211,9 +212,9 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
 
-CORS_ALLOWED_ORIGINS = [os.environ.get('CORS_ALLOWED_ORIGINS'), ]
+#CORS_ALLOWED_ORIGINS = [os.environ.get('CORS_ALLOWED_ORIGINS'), ]
 
-# CORS_ORIGIN_ALLOW_ALL = True
+ORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_METHODS = (
     "DELETE",
     "GET",
