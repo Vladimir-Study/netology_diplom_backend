@@ -29,11 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG")
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['*', ]
-=======
 ALLOWED_HOSTS = ["*"]
->>>>>>> refs/remotes/origin/main
 #   'http://localhost:5173'
 
 BASE_MEDIA_DIR = os.environ.get("BASE_MEDIA_DIR")
@@ -211,15 +207,10 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
 
-<<<<<<< HEAD
 #CORS_ALLOWED_ORIGINS = [os.environ.get('CORS_ALLOWED_ORIGINS'), ]
 
 ORS_ORIGIN_ALLOW_ALL = True
-=======
-# CORS_ALLOWED_ORIGINS = [os.environ.get('CORS_ALLOWED_ORIGINS'), ]
 
-CORS_ORIGIN_ALLOW_ALL = True
->>>>>>> refs/remotes/origin/main
 CORS_ALLOW_METHODS = (
     "DELETE",
     "GET",
