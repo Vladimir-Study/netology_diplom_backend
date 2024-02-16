@@ -135,9 +135,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+<<<<<<< HEAD
+STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+=======
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = "/static/"
 
+>>>>>>> refs/remotes/origin/main
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -201,9 +206,10 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
 
-# CORS_ALLOWED_ORIGINS = [os.environ.get('CORS_ALLOWED_ORIGINS'), ]
+#CORS_ALLOWED_ORIGINS = [os.environ.get('CORS_ALLOWED_ORIGINS'), ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+ORS_ORIGIN_ALLOW_ALL = True
+
 CORS_ALLOW_METHODS = (
     "DELETE",
     "GET",
